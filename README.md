@@ -86,6 +86,12 @@ cmake -B build && cmake --build build && ./build/sz_meters_tests
 c++ -std=c++17 -O2 tests/test_main.cpp -o sz_meters_tests && ./sz_meters_tests
 ```
 
+## Developer communication
+
+Use the repository's [GitHub Issues](https://github.com/StudioZIO/sz_meters/issues) for reproducible bugs, measurement discrepancies, portability reports and test-case contributions. Please include the commit or release, compiler and standard-library version, sample rate, channel layout, a minimal signal or fixture, the expected result and the observed result. Keep audio files and other private project material out of public issues; reduce a report to a small reproducible case instead.
+
+This is a focused developer channel for the `sz_meters` library. It is not a support queue for StudioZIO plug-in installation or DAW troubleshooting. For those requests, use the [StudioZIO support repository](https://github.com/StudioZIO/Support/issues). Do not describe this library as certified BS.1770-4 measurement software; the documented filter limitations above still apply.
+
 ## Origin
 
 Extracted from the metering used in [StudioZIO Mastering Suite](https://studioziomasteringsuite.vercel.app/), where these classes drive the meters you can see on the product page. Published because a measurement you cannot inspect is a measurement you have to take on trust.
